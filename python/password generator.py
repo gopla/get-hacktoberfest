@@ -1,11 +1,11 @@
 ## UPDATE 2021 : Thought of changing this with better variables and optimizations 
 ## but left it as it is , as a memoir for old *Me Coder*
 
-# import all the necesary libraries
+# import all the necessary libraries
+import itertools
+import math
 import os
 import shutil
-import math
-import itertools
 
 # the welcome function to be displayed at the beginning of the file
 def welcome():
@@ -118,7 +118,7 @@ if __name__ == "__main__":
     if checkForCharacters(kwords):
         # every char is valid
         # ask the length of password
-        password_Length = input("\n\n\033[34m Enter Password Length\n For More Values Seperate Them By Spaces > ")
+        password_Length = input("\n\n\033[34m Enter Password Length\n For More Values Separate Them By Spaces > ")
         # re assign the values to password_Length but as a list seperated
         password_Length = password_Length.split(" ")
         # check the list for any value to be less than 6 and greater than 12
